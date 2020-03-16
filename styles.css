@@ -18,8 +18,7 @@ a {
   max-width: 50%;
   box-shadow: 0.5px 0.5px 3px #333;
   transform: scale(1);
-  transition: transform 1s;
-  transition: box-shadow 1s;
+  transition: all 1s;
 }
 
 .article-header {
