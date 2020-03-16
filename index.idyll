@@ -15,6 +15,13 @@
 [var name:"query" value:"" /]
 
 
+[derived name:"filteredProjects" value:`allProjects.filter((d) => {
+    if (query && query.trim()) {
+      return d.Group.toLowerCase().indexOf(query.toLowerCase()) > -1;
+    }
+    return true;
+  })` /]
+
 [div className:"lede"]
   Thanks everyone for a great quarter. It was my pleasure getting to teach the data visualization course
   and to see the great work that everyone accomplished. I hope that you were able to build something that
@@ -29,13 +36,10 @@ The projects are presented below in an arbitrary order. Use the textbox below to
 Search:
 [TextInput value:query placeholder:"e.g. 'Health', 'Oscars', 'Coastline'" /]
 
+Showing [Display value:`filteredProjects.length ` format:"d" /] [Display value:`filteredProjects.length === 1 ? 'project' : 'projects' ` /].
+
 [FullWidth]
-  [Loop value:`allProjects.filter((d) => {
-    if (query && query.trim()) {
-      return d.Group.toLowerCase().indexOf(query.toLowerCase()) > -1;
-    }
-    return true;
-  })` ]
+  [Loop value:filteredProjects ]
     [Project fullWidth:true data:"_iterator" /]
   [/Loop]
 [/FullWidth]
