@@ -3,8 +3,9 @@
   max-height: 300px;
 }
 
-a {
+.article-header a {
   color: #000 !important;
+  text-decoration: none;
 }
 
 .button {
