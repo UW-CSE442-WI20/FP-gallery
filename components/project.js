@@ -36,7 +36,8 @@ class CustomComponent extends React.Component {
         height="315"
         style={{
           display: 'block',
-          margin: '0 auto'
+          margin: '0 auto',
+          maxWidth: '100%'
         }}
         src={`https://www.youtube.com/embed/${youtubeId}`}
         frameBorder="0"
