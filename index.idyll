@@ -31,7 +31,7 @@
 
 [/div]
 
-The projects are presented below in an arbitrary order. Use the textbox below to search for a specific project.
+The projects are presented in an arbitrary order. Use the textbox below to search for a specific project.
 
 Search:
 [TextInput value:query placeholder:"e.g. 'Health', 'Oscars', 'Coastline'" /]
