@@ -1,0 +1,41 @@
+[meta title:"Gallery" description:"Short description of your project" /]
+
+[Header
+  fullWidth:true
+  title:"Data Visualization Final Projects"
+  subtitle:"CSE 442 Winter 2020"
+  date:"March 15, 2020"
+  background:"#fff"
+  author:"Matthew Conlen"
+  byLineTemplate:`{prefix: 'Taught by'}`
+  color:"#000"
+   /]
+
+[data name:"allProjects" source:"all-projects.csv" /]
+[var name:"query" value:"" /]
+
+
+[div className:"lede"]
+  Thanks everyone for a great quarter. It was my pleasure getting to teach the data visualization course
+  and to see the great work that everyone accomplished. I hope the skills you've learned in this class are
+  beneficial as you go forward into your careers.
+
+  - Matt
+
+[/div]
+
+The projects are presented below in an arbitrary order. If you want to search for a specific project, use the textbox.
+
+Search:
+[TextInput value:query placeholder:"e.g. 'Health', 'Oscars', 'Coastline'" /]
+
+[FullWidth]
+  [Loop value:`allProjects.filter((d) => {
+    if (query && query.trim()) {
+      return d.Group.toLowerCase().indexOf(query.toLowerCase()) > -1;
+    }
+    return true;
+  })` ]
+    [Project fullWidth:true data:"_iterator" /]
+  [/Loop]
+[/FullWidth]
