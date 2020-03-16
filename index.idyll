@@ -17,14 +17,14 @@
 
 [div className:"lede"]
   Thanks everyone for a great quarter. It was my pleasure getting to teach the data visualization course
-  and to see the great work that everyone accomplished. I hope the skills you've learned in this class are
-  beneficial as you go forward into your careers.
+  and to see the great work that everyone accomplished. I hope that you were able to build something that
+  you're proud of, and that the skills you've learned are beneficial going forward.
 
   - Matt
 
 [/div]
 
-The projects are presented below in an arbitrary order. If you want to search for a specific project, use the textbox.
+The projects are presented below in an arbitrary order. Use the textbox below to search for a specific project.
 
 Search:
 [TextInput value:query placeholder:"e.g. 'Health', 'Oscars', 'Coastline'" /]

@@ -34,6 +34,10 @@ class CustomComponent extends React.Component {
       <iframe
         width="560"
         height="315"
+        style={{
+          display: 'block',
+          margin: '0 auto'
+        }}
         src={`https://www.youtube.com/embed/${youtubeId}`}
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
